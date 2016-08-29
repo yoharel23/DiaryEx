@@ -4,6 +4,9 @@ Execute program:
   This will start the server
   ---------------------------------
   In cURL_Commands.txt you can find the various commands to test this app using cURL.
+  ---------------------------------
+  This app was tested using POSTMAN
+##########################################################################################  
   
 Technologies:
 - Jetty embedded server
@@ -17,4 +20,4 @@ Technologies:
 - Git
 
 Unit tests:
-Unit tests will test and verify the logic components of this program.
+  Unit tests will test and verify the logic components of this program.
