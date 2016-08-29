@@ -1,0 +1,49 @@
+
+
+INSERT:
+-----------
+curl -H "Content-Type: application/json" -X POST -d '{"eventDate":"20/10/2015","eventName":"Yoni_1","eventDescription":"description"}' http://localhost:8080/diary/insert
+
+curl -H "Content-Type: application/json" -X POST -d '{"eventDate":"20/11/2015","eventName":"Yoni_2","eventDescription":"another_description"}' http://localhost:8080/diary/insert
+
+curl -H "Content-Type: application/json" -X POST -d '{"eventDate":"22/11/2015","eventName":"Yoni_3","eventDescription":"this is description"}' http://localhost:8080/diary/insert
+
+
+UPDATE:
+-----------
+curl -H "Content-Type: application/json" -X POST -d '{"eventDate":"20/10/2015","eventName":"Yoni_updated_1","eventDescription":"description"}' http://localhost:8080/diary/update
+
+
+SEARCH BY DESCRIPTION:
+--------------------------
+curl -H "Content-Type: application/json" -X POST -d '{"eventDescription":"description"}' http://localhost:8080/diary/searchByDescription
+
+
+SEARCH BY DATES:
+---------------------
+curl -H "Content-Type: application/json" -X POST -d '{"fromDate" : "22/10/2015","toDate" : "28/11/2015"}' http://localhost:8080/diary/searchByDates
+
+
+SEARCH BY DESCRIPTION AND DATES:
+------------------------
+curl -H "Content-Type: application/json" -X POST -d '{"eventDescription":"description","fromDate" : "22/10/2015","toDate" : "28/11/2015"}' http://localhost:8080/diary/searchByDescriptionAndDates
+
+
+GET ALL EVENTS:
+------------------
+curl http://localhost:8080/diary/getAll
+
+
+REMOVE:
+-----------
+curl -H "Content-Type: application/json" -X POST -d '{"eventId": 1}' http://localhost:8080/diary/remove
+
+
+EXPORT DIARY:
+-----------------
+curl -H "Content-Type: application/json" -X POST -d '{"fileName" : "exportedDiary.xml"}' http://localhost:8080/diary/export
+
+
+IMPORT DIARY:
+-----------------
+curl -H "Content-Type: application/json" -X POST -d '{"fileName" : "exportedDiary.xml"}' http://localhost:8080/diary/import

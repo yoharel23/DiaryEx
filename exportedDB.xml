@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<events>
+    <eventList ID="1">
+        <date>28/10/2015</date>
+        <description>another</description>
+        <name>Aviad_1</name>
+    </eventList>
+    <eventList ID="2">
+        <date>20/10/2015</date>
+        <description>another</description>
+        <name>Aviad_4</name>
+    </eventList>
+</events>
