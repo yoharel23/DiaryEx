@@ -6,6 +6,7 @@ Execute program:
   In cURL_Commands.txt you can find the various commands to test this app using cURL.
   ---------------------------------
   This app was tested using POSTMAN
+  
 ##########################################################################################  
   
 Technologies:
@@ -18,6 +19,8 @@ Technologies:
 - RESTful
 - Maven
 - Git
+
+##########################################################################################
 
 Unit tests:
   Unit tests will test and verify the logic components of this program.
